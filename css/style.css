@@ -3,9 +3,36 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
+.service-container{
+	width: 1140;
+	margin: auto;
+}
+
 .service-row{
 	display: flex;
+	flex-wrap: wrap;
 }
-.service-container{
-	background-color: ;
+
+.service-col-1{
+	width: 33.33%;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.service-col-2{
+	width: 33.33%;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.service-col-3{
+	width: 33.33%;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.service-box{
+	border: 1px solid red;
+	text-align: center;
 }

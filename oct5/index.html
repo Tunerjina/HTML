@@ -12,7 +12,6 @@
     <script>
         function show() {
             let name = document.getElementById("name").value
-
             if (name == "") {
                 document.getElementById("nameInstitute").innerHTML = "Enter Your Valid Name";
             } else {
@@ -20,18 +19,25 @@
             }
         }
 
-        add(900, 600)
-
+        let ans = add(900, 600);
+        console.log("Addition is", ans);
         function add(a, b) {
-            let answer = a + b;
-            console.log("Answer is", answer)
+            return a + b;
         }
-        sub(900, 600)
 
+         ans = sub(900, 600);
+        console.log("Subtraction is", ans);
         function sub(a, b) {
-            let answer = a - b;
-            console.log("Answer is", answer)
+            return a - b;
         }
+
+         const multi = (a,b) => {
+            return a * b;
+         }
+         const mul = (a,b) => a*b;
+         let m = mul(30,50);
+         console.log("Multiplication is", m);
+         
     </script>
 </body>
 

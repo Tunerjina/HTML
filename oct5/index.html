@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <title>Welcome to my page</title>
+</head>
+
+<body>
+    <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+    <p id="nameInstitute">NACTAR</p>
+    <button onclick="show()">click here to show</button>
+
+    <script>
+        function show() {
+            let name = document.getElementById("name").value
+
+            if (name == "") {
+                document.getElementById("nameInstitute").innerHTML = "Enter Your Valid Name";
+            } else {
+                document.getElementById("nameInstitute").innerHTML = "Hello" + name;
+            }
+        }
+
+        add(900, 600)
+
+        function add(a, b) {
+            let answer = a + b;
+            console.log("Answer is", answer)
+        }
+        sub(900, 600)
+
+        function sub(a, b) {
+            let answer = a - b;
+            console.log("Answer is", answer)
+        }
+    </script>
+</body>
+
+</html>
